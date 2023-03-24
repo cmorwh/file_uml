@@ -1,9 +1,41 @@
-<mxfile host="app.diagrams.net" modified="2023-03-24T07:23:42.363Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="sbsK7J1XUpvDLKlgYVvh" version="21.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-24T07:56:41.058Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="Wi4fD8RR0TJMtmrgJC6Q" version="21.1.0" type="github">
   <diagram name="第 1 页" id="dh9QJbm2s8XATDBdd-MG">
     <mxGraphModel dx="1050" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;BeanFactory&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ beanDefinitionMap: Map&amp;lt;String,BeanDefinition&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+registerBeanDefinition(String name,BeanDefinition beanfinition): &lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getBean(String name): &lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="80" y="210" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-19" value="依赖" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=1;exitX=0.474;exitY=-0.031;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=default;strokeWidth=4;fontSize=16;" edge="1" parent="1" source="FsenPDVMBQdXBydk2ZDS-16">
+          <mxGeometry x="-0.0418" y="20" width="160" relative="1" as="geometry">
+            <mxPoint x="240" y="192" as="sourcePoint" />
+            <mxPoint x="240" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="160" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-20" value="Beanfinition" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="170" y="50" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-21" value="+ bean:Object" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="FsenPDVMBQdXBydk2ZDS-20">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-26" value="ApiTest" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="185" y="430" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-27" value="使用" style="endArrow=open;dashed=1;html=1;rounded=0;strokeWidth=4;fontSize=16;" edge="1" parent="1">
+          <mxGeometry y="20" width="160" relative="1" as="geometry">
+            <mxPoint x="240" y="420" as="sourcePoint" />
+            <mxPoint x="240" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="360" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
