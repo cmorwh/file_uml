@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-24T07:56:41.058Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="Wi4fD8RR0TJMtmrgJC6Q" version="21.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-24T08:08:04.213Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="i_0gxUgWSBx5HDFEH4lR" version="21.1.0" type="github">
   <diagram name="第 1 页" id="dh9QJbm2s8XATDBdd-MG">
-    <mxGraphModel dx="1050" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1877" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -35,6 +35,15 @@
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-29" value="Bean定义" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="61" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-30" value="Bean工厂" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="255" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FsenPDVMBQdXBydk2ZDS-31" value="测试类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="430" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
