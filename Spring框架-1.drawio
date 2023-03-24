@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-24T08:28:41.021Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="y9eehewp06lRGJt73Mfk" version="21.1.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-03-24T10:10:48.837Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="WhRcCNc6pngXRLi-HfOk" version="21.1.0" type="github" pages="2">
   <diagram name="第 1 页" id="dh9QJbm2s8XATDBdd-MG">
     <mxGraphModel dx="1877" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,15 +52,105 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QNsL7sPdJeYb61cAPO8Z" name="第 2 页">
-    <mxGraphModel dx="1050" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1877" dy="1707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2MnAujqviXWYuMtPjZ15-1" value="Beanfinition" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#82b366;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="220" y="30" width="180" height="80" as="geometry" />
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;BeanFactory&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;br&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+getBean(String name): Object&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getBean(String name, Object[] args): Object&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry y="-200" width="341" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="2MnAujqviXWYuMtPjZ15-2" value="+ beanClass: Class" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2MnAujqviXWYuMtPjZ15-1">
-          <mxGeometry y="26" width="180" height="54" as="geometry" />
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-8" value="AbstractBeanFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="80" width="370" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-9" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-8">
+          <mxGeometry y="26" width="370" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-8">
+          <mxGeometry y="50" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-11" value="&lt;div&gt;+getBean(String name): Object&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getBean(String name, Object[] args): Object&lt;br&gt;&lt;br&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;#getBeanDefinition(String beanName) : Beanfinition&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;#createBean(String beanName,Beanfinition beanfinition): Object&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-8">
+          <mxGeometry y="58" width="370" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-13" value="实现" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="-30" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-14" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;strokeColor=default;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="145" y="70" as="sourcePoint" />
+            <mxPoint x="145" y="-60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="145" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-15" value="&lt;p style=&quot;margin: 4px 0px 0px;&quot; align=&quot;center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot; align=&quot;center&quot;&gt;&lt;span&gt;SingletonBeanRegistry&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; align=&quot;left&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; align=&quot;left&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;+ getSingleton(String name)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;+ registerSingleton(String beanName, Object&amp;nbsp; singletonObject)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="480" y="-200" width="410" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-16" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ff0000&quot;&gt;Bean工厂&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="-235" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-17" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ff3333&quot;&gt;单例Bean注册类&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="590" y="-230" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;Beanfinition&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ beanClass: Class &lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-380" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-20" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Bean定义&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="385" y="-415" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-28" value="DefaultSingletonBeanRegistry" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="535" y="40" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-29" value="+ singletonObjects:&amp;nbsp; Map&amp;lt;String,Object&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-28">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-28">
+          <mxGeometry y="52" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-31" value="&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;+ getSingleton(String name)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot; align=&quot;left&quot;&gt;&lt;br&gt;&lt;/p&gt;+ registerSingleton(String beanName, Object&amp;nbsp; singletonObject)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-28">
+          <mxGeometry y="60" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-32" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ff3333&quot;&gt;默认单例Bean注册类&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-34" value="实现" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="-30" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-36" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.613;exitY=-0.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="yJOfvLxUSj5ndzEBByeN-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" as="sourcePoint" />
+            <mxPoint x="720" y="-60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-37" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="410" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-38" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-37">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-37">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-40" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="yJOfvLxUSj5ndzEBByeN-37">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-42" value="继承" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="313" y="100" as="sourcePoint" />
+            <mxPoint x="533" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yJOfvLxUSj5ndzEBByeN-44" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ff0000&quot;&gt;抽象Bean工厂&amp;nbsp; &lt;br&gt;抽象的 Bean 工厂基类，&lt;br&gt;定义模板方法 &lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-65" y="10" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A9AcCAwVKS-y1DrHHfAE-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BeanDefinitionRegistry&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ registerBeanDefinition(String name,Beanfinition befinition ): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="500" y="350" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="A9AcCAwVKS-y1DrHHfAE-3" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ff0000&quot;&gt;Bean定义注册类&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="485" y="310" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
